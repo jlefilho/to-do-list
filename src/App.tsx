@@ -1,6 +1,6 @@
 import { Header } from "./components/Header/Header";
 import { Input } from "./components/Input/Input";
-import { Board } from "./components/Board/Board";
+import { TaskBoard } from "./components/TaskBoard/TaskBoard";
 
 import './global.css'
 import styles from './App.module.css'
@@ -11,7 +11,7 @@ export function App() {
       <Header />
       <div className={styles.wrapper}>
         <Input />
-        <Board />
+        <TaskBoard />
 
       </div>
 

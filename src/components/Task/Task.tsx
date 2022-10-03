@@ -5,8 +5,9 @@ import styles from './Task.module.css'
 export function Task() {
     return (
         <div className={styles.taskBox}>
-            <input                
+            <input                               
                 type="checkbox"
+                className={styles.taskCheckbox}
             />
             
             <p>Aqui é um exemplo de tarefa</p>

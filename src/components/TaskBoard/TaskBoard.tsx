@@ -1,8 +1,8 @@
 import { Task } from "../Task/Task"
 
-import styles from './Board.module.css'
+import styles from './TaskBoard.module.css'
 
-export function Board() {
+export function TaskBoard() {
     return (
         <section className={styles.container}>
             <header className={styles.header}>
