@@ -1,4 +1,59 @@
-.container {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    margin: -1.75rem auto;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 0.66rem; 
+}
+
+.inputContainer input {
+    background: var(--gray-400);
+    color: var(--gray-300);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    width: 53.16rem;
+    height: 4.5rem;
+    font-size: 1.25rem;
+    padding: 1.33rem;
+}
+
+.inputContainer input:focus {
+    color: var(--gray-100);
+}
+
+.inputContainer button {
+    background: var(--blue-600);
+    color: var(--gray-100);
+    font-weigth: 700;
+    font-size: 1.16rem;
+    border: 0;
+    border-radius: 8px;
+    height: 4.33rem;
+    width: 7.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.66rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.1s
+}
+
+.inputContainer button:hover {
+    background: var(--blue-300);
+}
+
+.inputContainer button:disabled {
+    opacity: 0.5;
+}
+
+.taskContainer {
     display: flex;
     flex-direction: column;    
     margin: 5.33rem auto;
@@ -44,4 +99,39 @@
     flex-direction: column;
     margin: 2rem auto;
     gap: 1rem; 
+}
+
+.emptyTasks {
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+}
+
+.tasksContainer {
+    display: flex;    
+    flex-direction: column;
+    justify-contet: center;
+    align-items: center;
+    width: 100%;
+    height: 20.33rem;
+    border-top: 1px solid var(--gray-300);
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    padding: 5.33rem;
+    gap: 1rem;
+    color: var(--gray-300);
+    font-weight: bold;
+    fon-size: 1.33rem;    
+}
+
+.tasksContainer span {
+    font-weight: normal;
+}
+
+.tasksContainer p {
+    font-weight: 700;
+}
+
+.tasksContainer img {
+    height: 4.66rem;
 }
